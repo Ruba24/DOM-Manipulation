@@ -1,0 +1,40 @@
+body{
+    background-color: grey;
+}
+/* #outerBox{
+    border: solid 2px green;
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-around;
+}
+.innerBox{
+    border: solid 2px black;
+    height: 150px;
+} */
+
+ /* Styling the main container */
+   /* Styling the main container */
+   #main-div {
+    background-color: green;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Styling for the boxes */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 100px;
+    font-family: Arial, sans-serif;
+}
+
