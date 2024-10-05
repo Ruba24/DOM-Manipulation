@@ -1,0 +1,32 @@
+.container{
+    width: 50%;
+    margin: 20px auto;
+}
+.tab{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: gray;
+    color: white;
+}
+button.active{
+    background-color: aquamarine;
+    font-weight: bold;
+}
+.tab-content{
+    display:none;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0px 8px 12px rgba(0,0,0,0.2);
+}
+.tab-content.active{
+    display: block;
+}
