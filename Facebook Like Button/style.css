@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+.like-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    position: relative;
+}
+
+.like-btn {
+    background-color: #1877F2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.liked {
+    background-color: #4267B2; /* Darker blue to indicate it's liked */
+}
+
+.like-btn:hover {
+    background-color: #155da8;
+}
+
+/* Reactions Pop-up Style */
+.reactions-popup {
+    display: none;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.reaction {
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.reaction:hover {
+    transform: scale(1.5);
+}
+
+/* Show reactions when hovering over the like button */
+.like-container:hover .reactions-popup {
+    display: flex;
+    gap: 5px;
+}
+
+/* Counter Styling */
+#like-count {
+    font-size: 18px;
+}

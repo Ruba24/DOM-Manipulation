@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Button with Reactions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="like-container">
+        <!-- Main Like Button -->
+        <button id="like-button" class="like-btn" onclick="toggleLike()">👍 Like</button>
+        <span id="like-count">0</span> Reactions
+
+        <!-- Reactions Pop-up -->
+        <div class="reactions-popup" id="reactions-popup">
+            <span class="reaction" onclick="setReaction('like')">👍</span>
+            <span class="reaction" onclick="setReaction('love')">❤️</span>
+            <span class="reaction" onclick="setReaction('haha')">😂</span>
+            <span class="reaction" onclick="setReaction('wow')">😮</span>
+            <span class="reaction" onclick="setReaction('sad')">😢</span>
+            <span class="reaction" onclick="setReaction('angry')">😡</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
